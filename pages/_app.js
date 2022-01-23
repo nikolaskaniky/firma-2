@@ -1,7 +1,24 @@
-import '../styles/globals.css'
+import Layout from "../components/layout/layout";
+import globals from "../styles/globals.scss";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import { useStore } from "../redux/store";
+import { Provider } from "react-redux";
+import { persistStore } from "redux-persist";
+import { PersistGate } from "redux-persist/lib/integration/react";
+
+export default function MyApp({ Component, pageProps }) {
+  const store = useStore(pageProps.initialReduxState);
+  const persistor = persistStore(store, {}, function () {
+    persistor.persist();
+  });
+
+  return (
+    <Provider store={store}>
+      {/* <PersistGate loading={<h1>loading....</h1>} persistor={persistor}> */}
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+      {/* </PersistGate> */}
+    </Provider>
+  );
 }
-
-export default MyApp

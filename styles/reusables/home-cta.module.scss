@@ -1,0 +1,60 @@
+@import "../helpers.scss";
+
+// color: #3544cb
+
+.home-cta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image-container {
+      position: relative;
+      width: 100%;
+    }
+
+    a {
+      max-width: 261px;
+      width: 100%;
+      height: 59px;
+      margin-top: 60px;
+
+      .button {
+        width: 100%;
+        height: 100%;
+        border-radius: 31px;
+        box-shadow: 0 1px 6px 0 #d6d6e8;
+        border: solid 2px #5c69e3;
+        @include center;
+        p {
+          text-shadow: 0 1px 2px #d6d6e8;
+          font-size: 1.1rem;
+          font-weight: normal;
+          color: #3544cb;
+        }
+      }
+    }
+  }
+}
+
+.scroll-button {
+  cursor: pointer;
+  max-width: 261px;
+  width: 100%;
+  height: 59px;
+  margin-top: 60px;
+  border-radius: 31px;
+  box-shadow: 0 1px 6px 0 #d6d6e8;
+  border: solid 2px #5c69e3;
+  @include center;
+  p {
+    text-shadow: 0 1px 2px #d6d6e8;
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #3544cb;
+  }
+}

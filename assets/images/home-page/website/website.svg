@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="574.828" height="479" viewBox="0 0 574.828 479">
+    <defs>
+        <filter id="_content_" x="263.328" y="233" width="87" height="32" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="_aside_" x="83.328" y="237" width="58" height="27" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation="1" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="_aside_2" x="473.328" y="236" width="58" height="27" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation="1" result="blur-3"/>
+            <feFlood flood-opacity=".098"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="_nav_" x="283.328" y="88" width="47" height="27" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation="1" result="blur-4"/>
+            <feFlood flood-color="#d6d6e8"/>
+            <feComposite operator="in" in2="blur-4"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="_footer_" x="276.328" y="384" width="61" height="27" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation="1" result="blur-5"/>
+            <feFlood flood-color="#d6d6e8"/>
+            <feComposite operator="in" in2="blur-5"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-10,.cls-15,.cls-18{fill:none}.cls-10,.cls-15{stroke-linecap:round;stroke-width:2px}.cls-4{fill:#b6e8d5}.cls-13,.cls-14,.cls-9{font-family:Poppins-Regular,Poppins}.cls-7{fill:#5c69e3}.cls-9{fill:#ff8bff}.cls-13,.cls-14,.cls-9{font-size:13px}.cls-10{stroke:#bee6ef;stroke-dasharray:19}.cls-15{stroke:#000e89}.cls-14{fill:#000e89}.cls-13{fill:#fff}.cls-15{stroke-dasharray:15}.cls-17{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_1665" data-name="Group 1665" transform="translate(-1038.672 -2866)">
+        <path id="Path_6" data-name="Path 6" d="M1472.254 1501h-288.582v44.031" transform="translate(-144 1467)" style="opacity:.498;stroke-dasharray:20;stroke-width:2px;stroke-linecap:round;stroke:#5c69e3;fill:none"/>
+        <path id="Path_8" data-name="Path 8" d="M1275.7 1801h-90.832v-53.664" transform="translate(-145 1459)" style="opacity:.502;stroke-dasharray:20;stroke-width:2px;stroke-linecap:round;stroke:#5c69e3;fill:none"/>
+        <path id="Path_7" data-name="Path 7" d="M1400.16 1602.375h-220.316v65.086" transform="translate(-140 1472)" style="opacity:.503;stroke-dasharray:20;stroke-width:2px;stroke-linecap:round;stroke:#5c69e3;fill:none"/>
+        <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-4" width="474" height="56" rx="15" transform="translate(1108 2938)"/>
+        <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-4" width="474" height="56" rx="15" transform="translate(1108 3234)"/>
+        <path id="Path_5" data-name="Path 5" d="M1768.031 1662.439v-250h-540" transform="translate(-156.031 1495)" style="stroke-width:3px;opacity:.496;stroke-dasharray:20;stroke-linecap:round;stroke:#5c69e3;fill:none"/>
+        <text id="Website" transform="translate(1513 2894)" style="font-family:Poppins-Regular,Poppins;fill:#adadad;font-size:25px"><tspan x="0" y="0">Website</tspan></text>
+        <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-7" width="85" height="220" rx="15" transform="translate(1108 3004)"/>
+        <rect id="Rectangle_7" data-name="Rectangle 7" class="cls-7" width="85" height="220" rx="15" transform="translate(1498 3004)"/>
+        <rect id="Rectangle_8" data-name="Rectangle 8" width="285" height="220" rx="15" transform="translate(1203 3004)" style="fill:#bee6ef"/>
+        <text id="_Header_" data-name="&lt;Header&gt;" class="cls-9" transform="translate(1040 2961)"><tspan x="0" y="0">&lt;Header&gt;</tspan></text>
+        <text id="_Main_" data-name="&lt;Main&gt;" class="cls-9" transform="translate(1040 3067)"><tspan x="0" y="0">&lt;Main&gt;</tspan></text>
+        <text id="_Footer_2" data-name="&lt;Footer&gt;" class="cls-9" transform="translate(1040 3274)"><tspan x="0" y="0">&lt;Footer&gt;</tspan></text>
+        <g id="Rectangle_10" data-name="Rectangle 10" class="cls-10" transform="translate(1113 3010)">
+            <rect class="cls-17" width="75" height="210" rx="19"/>
+            <rect class="cls-18" x="1" y="1" width="73" height="208" rx="18"/>
+        </g>
+        <g id="Rectangle_11" data-name="Rectangle 11" class="cls-10" transform="translate(1503 3009)">
+            <rect class="cls-17" width="75" height="210" rx="19"/>
+            <rect class="cls-18" x="1" y="1" width="73" height="208" rx="18"/>
+        </g>
+        <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(1208 3009)" style="stroke:#000e89;stroke-dasharray:20;stroke-width:2px;fill:none">
+            <rect class="cls-17" width="275" height="210" rx="19"/>
+            <rect class="cls-18" x="1" y="1" width="273" height="208" rx="18"/>
+        </g>
+        <g transform="translate(1038.67 2866)" style="filter:url(#_content_)">
+            <text id="_content_2" data-name="&lt;content&gt;" transform="translate(266.33 253)" style="font-size:16px;fill:#000e89;font-family:Poppins-Regular,Poppins"><tspan x="0" y="0">&lt;content&gt;</tspan></text>
+        </g>
+        <g transform="translate(1038.67 2866)" style="filter:url(#_aside_)">
+            <text id="_aside_3" data-name="&lt;aside&gt;" class="cls-13" transform="translate(86.33 253)"><tspan x="0" y="0">&lt;aside&gt;</tspan></text>
+        </g>
+        <g transform="translate(1038.67 2866)" style="filter:url(#_aside_2)">
+            <text id="_aside_4" data-name="&lt;aside&gt;" class="cls-13" transform="translate(476.33 252)"><tspan x="0" y="0">&lt;aside&gt;</tspan></text>
+        </g>
+        <g transform="translate(1038.67 2866)" style="filter:url(#_nav_)">
+            <text id="_nav_2" data-name="&lt;nav&gt;" class="cls-14" transform="translate(286.33 104)"><tspan x="0" y="0">&lt;nav&gt;</tspan></text>
+        </g>
+        <g transform="translate(1038.67 2866)" style="filter:url(#_footer_)">
+            <text id="_footer_3" data-name="&lt;footer&gt;" class="cls-14" transform="translate(279.33 400)"><tspan x="0" y="0">&lt;footer&gt;</tspan></text>
+        </g>
+        <g id="Rectangle_13" data-name="Rectangle 13" class="cls-15" transform="translate(1113 2943)">
+            <rect class="cls-17" width="464" height="46" rx="14"/>
+            <rect class="cls-18" x="1" y="1" width="462" height="44" rx="13"/>
+        </g>
+        <g id="Rectangle_14" data-name="Rectangle 14" class="cls-15" transform="translate(1113 3239)">
+            <rect class="cls-17" width="464" height="46" rx="14"/>
+            <rect class="cls-18" x="1" y="1" width="462" height="44" rx="13"/>
+        </g>
+        <text id="_Body_" data-name="&lt;Body&gt;" class="cls-9" transform="translate(1085 2900)"><tspan x="0" y="0">&lt;Body&gt;</tspan></text>
+        <text id="Semantics" transform="translate(1286 3337)" style="fill:#272640;font-size:15px;letter-spacing:.3em;font-family:Poppins-Regular,Poppins"><tspan x="0" y="0">SEMANTICS</tspan></text>
+    </g>
+</svg>

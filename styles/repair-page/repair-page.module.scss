@@ -1,0 +1,126 @@
+@import "../helpers.scss";
+
+main.repair-page {
+  @include page-config;
+}
+
+section.hero {
+  @include basic-section-config;
+  @include center;
+  flex-direction: column;
+
+  .image {
+    position: relative;
+    max-width: 680px;
+    width: 100%;
+    height: 350px;
+  }
+
+  .button {
+    max-width: 261px;
+    width: 100%;
+    height: 59px;
+    border-radius: 31px;
+    border: solid 2px #3544cb;
+    @include center;
+    margin: 60px 0;
+    cursor: pointer;
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 1.8px;
+      color: #5c69e3;
+    }
+  }
+
+  .text {
+    margin-bottom: 60px;
+
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 1.8px;
+      color: #00063b;
+    }
+  }
+
+  .tags {
+    display: flex;
+    gap: 20px;
+
+    .tag-wrapper {
+      padding: 5px 30px;
+      border-radius: 17px;
+      border: solid 2px #58aadd;
+      background-color: #fff;
+
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        color: #5499c4;
+      }
+    }
+
+    .tag-wrapper:nth-child(1) {
+      p {
+        color: #ff7f00;
+      }
+    }
+
+    .tag-wrapper:nth-child(3) {
+      p {
+        color: #58aadd;
+      }
+    }
+  }
+}
+
+section.cta {
+  @include basic-section-config;
+  margin: 40px 0;
+  @include center;
+  flex-direction: column;
+
+  .title {
+    margin-bottom: 60px;
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      color: #3544cb;
+    }
+  }
+
+  .text {
+    text-align: center;
+    margin-bottom: 60px;
+
+    p {
+      text-shadow: 0 1px 2px #d6d6e8;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      color: #858498;
+    }
+  }
+
+  .button {
+    max-width: 261px;
+    width: 100%;
+    height: 59px;
+    border-radius: 30px;
+    border: solid 2px #3544cb;
+    @include center;
+    cursor: pointer;
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 1.8px;
+      color: #3544cb;
+    }
+  }
+}

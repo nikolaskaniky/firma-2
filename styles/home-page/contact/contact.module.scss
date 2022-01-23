@@ -1,0 +1,60 @@
+@import "../../helpers.scss";
+
+.contact {
+  @include section-config;
+}
+
+.presentation {
+  .nr {
+    @include nr-home-config;
+  }
+
+  .title-wrapper {
+    .pre {
+      @include pretitle-home-config;
+    }
+
+    .main {
+      @include title-home-config;
+    }
+
+    .sub {
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 28.26px;
+      color: #5499c4;
+    }
+  }
+
+  .text {
+    margin-top: 40px;
+
+    p {
+      font-size: 1.1rem;
+      font-weight: normal;
+      line-height: 1.67;
+      color: #858498;
+    }
+
+    :nth-child(2) {
+      margin-top: 10px;
+      color: #6e6c8d;
+    }
+  }
+}
+
+.cta {
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+
+  .content {
+    max-width: 605px;
+    width: 100%;
+
+    .image-container {
+      width: 100%;
+      height: 613px;
+    }
+  }
+}

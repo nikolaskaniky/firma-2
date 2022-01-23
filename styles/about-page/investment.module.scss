@@ -1,0 +1,42 @@
+@import "../helpers.scss";
+
+.investment {
+  @include about-section-config;
+  padding: 60px;
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      @include about-title-config;
+    }
+
+    .text {
+      @include text-home-config;
+
+      p {
+        line-height: 1.94;
+      }
+    }
+  }
+
+  .image-wrapper {
+    width: 100%;
+    .image {
+      position: relative;
+      max-width: 510px;
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: $tablet-bkpt) {
+  .investment {
+    .image-wrapper {
+      @include center;
+    }
+  }
+}

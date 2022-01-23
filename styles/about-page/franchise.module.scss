@@ -1,0 +1,38 @@
+@import "../helpers.scss";
+
+.franchise {
+  @include about-section-config;
+  padding: 60px;
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      @include about-title-config;
+    }
+
+    .text {
+      @include text-home-config;
+    }
+  }
+
+  .image-wrapper {
+    .image {
+      position: relative;
+      max-width: 520px;
+      width: 100%;
+      height: 390px;
+    }
+  }
+}
+
+@media (max-width: $tablet-bkpt) {
+  .franchise {
+    .image-wrapper {
+      width: 100%;
+      @include center;
+    }
+  }
+}

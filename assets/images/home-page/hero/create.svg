@@ -1,0 +1,17 @@
+<svg id="edit-tools" xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0062ff"/>
+            <stop offset="1" stop-color="#00b1ff"/>
+        </linearGradient>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+    </defs>
+    <path id="Path_515" data-name="Path 515" class="cls-1" d="M96 32h1.7v1.7H96zm0 0" transform="translate(-85.8 -28.6)"/>
+    <path id="Path_516" data-name="Path 516" class="cls-1" d="M128 32h1.7v1.7H128zm0 0" transform="translate(-114.4 -28.6)"/>
+    <path id="Path_517" data-name="Path 517" class="cls-1" d="M160 32h1.7v1.7H160zm0 0" transform="translate(-143 -28.6)"/>
+    <path id="Path_518" data-name="Path 518" class="cls-1" d="M.85 244.051H27.2a.85.85 0 0 0 .6-1.451L1.451 216.25a.85.85 0 0 0-1.451.6v26.35a.85.85 0 0 0 .85.851zM1.7 218.9l23.448 23.448H1.7zm0 0" transform="translate(0 -193.051)"/>
+    <path id="Path_519" data-name="Path 519" class="cls-1" d="m57.951 344.75-8.5-8.5a.85.85 0 0 0-1.451.6v8.5a.85.85 0 0 0 .85.85h8.5a.85.85 0 0 0 .6-1.451zm-8.251-.25v-5.6l5.6 5.6zm0 0" transform="translate(-42.9 -300.301)"/>
+    <path id="Path_520" data-name="Path 520" class="cls-1" d="M107.246 7.256a3.254 3.254 0 0 0-4.6-4.6l-1.275 1.275A4.242 4.242 0 0 0 97.15 0h-28.9A4.255 4.255 0 0 0 64 4.25v22.1h1.7V4.25a2.55 2.55 0 0 1 2.55-2.55h28.9a2.55 2.55 0 0 1 2.55 2.55V5.6l-8 8h-6.25a9.346 9.346 0 1 0-9.55 12.708v3.442a.85.85 0 0 0 .85.85h18.7a.85.85 0 0 0 .85-.85V18.2l3.4-3.4v17.5H80.15a.85.85 0 0 0-.85.85v6.8a.85.85 0 0 0 .85.85H99.7v.85a2.55 2.55 0 0 1-2.55 2.55h-13.6v1.7h13.6a4.255 4.255 0 0 0 4.25-4.25v-.85h5.95a.85.85 0 0 0 .85-.85v-6.8a.85.85 0 0 0-.85-.85h-5.95V13.1zm-3.4-3.4a1.555 1.555 0 1 1 2.2 2.2l-.394.394-2.2-2.2zM84.4 17a7.658 7.658 0 0 1-6.8 7.6v-9.3h6.6a7.634 7.634 0 0 1 .2 1.7zm-8.5-2.55V24.6a7.65 7.65 0 1 1 7.692-11H76.75a.85.85 0 0 0-.85.85zM94.6 28.9h-17v-2.592A9.312 9.312 0 0 0 85.938 15.3H90l-1.949 1.949a.843.843 0 0 0-.232.435l-.85 4.25a.85.85 0 0 0 .831 1.016.808.808 0 0 0 .17-.017l4.25-.85a.844.844 0 0 0 .434-.232L94.6 19.9zm-5.428-9.326 1.155 1.155-1.445.288zM103.1 34v1.7h1.7V34h1.7v5.1H81V34h1.7v1.7h1.7V34h1.7v1.7h1.7V34h1.7v1.7h1.7V34h1.7v1.7h1.7V34h1.7v1.7H98V34h1.7v1.7h1.7V34zM92.05 20.048l-2.2-2.2 12.4-12.4 2.2 2.2zm0 0" transform="translate(-57.2)"/>
+</svg>

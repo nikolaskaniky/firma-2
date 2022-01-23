@@ -1,0 +1,81 @@
+@import "../helpers.scss";
+
+main.sign-up-page {
+  @include page-config;
+
+  section.sign-up {
+    @include basic-section-config;
+    @include center;
+  }
+}
+
+form.backdrop {
+  max-width: 1000px;
+  width: 100%;
+  height: 601px;
+  border-radius: 20px;
+  box-shadow: 0 1px 12px 0 #9194d1;
+  background-color: #313eb9;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
+
+  .left-form,
+  .right-form {
+    max-width: 430px;
+    width: 100%;
+    height: 526px;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 1px 8px 0 #312998;
+    background-color: #7a87f593;
+    // position: absolute;
+    position: relative;
+    top: -44px;
+  }
+
+  .left-form {
+    left: 30px;
+  }
+
+  .right-form {
+    // left: 40px;
+  }
+
+  h1 {
+    position: absolute;
+    bottom: 61px;
+    left: 380px;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+
+  button {
+    position: absolute;
+    bottom: 30px;
+    right: 114px;
+
+    max-width: 346px;
+    width: 100%;
+    height: 59px;
+    border-radius: 31px;
+    box-shadow: 0 1px 4px 0 #c0bdd8;
+    background-color: #fff;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    color: #3544cb;
+  }
+}
+
+@media (max-width: $tablet-bkpt) {
+  form.backdrop {
+    grid-template-columns: 1fr;
+  }
+}

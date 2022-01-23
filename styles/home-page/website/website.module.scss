@@ -1,0 +1,23 @@
+@import "../../helpers.scss";
+
+.website {
+  @include carousel-section-config;
+}
+
+//* navigation
+
+.navigation {
+  @include navigation-home-config;
+}
+
+.cta {
+  .content {
+    max-width: 573.3px;
+    width: 100%;
+
+    .image-container {
+      width: 100%;
+      height: 479px;
+    }
+  }
+}

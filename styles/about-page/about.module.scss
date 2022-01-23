@@ -1,0 +1,5 @@
+@import "../helpers.scss";
+
+.about-page {
+  @include page-config;
+}
