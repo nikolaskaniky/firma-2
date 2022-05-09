@@ -1,0 +1,67 @@
+@import "../../../styles/globally-styles.scss";
+
+section.error-message {
+  @include center;
+  flex-direction: column;
+  padding: 60px 0;
+
+  .image-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 60px;
+  }
+
+  .banner {
+    max-width: 700px;
+    width: 100%;
+    height: 130px;
+    @include center;
+    background: linear-gradient(to right, #cc3a3a, #842727);
+    border-radius: 10px;
+    margin-bottom: 60px;
+
+    h1 {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+
+  p {
+    color: #9796ad;
+  }
+
+  p.message {
+    margin-bottom: 34px;
+  }
+
+  p.copyright {
+    margin-bottom: 60px;
+  }
+
+  .button {
+    max-width: 350px;
+    width: 100%;
+    height: 56px;
+    @include center;
+    border-radius: 10px;
+    border: 1.5px solid #ed1111;
+    cursor: pointer;
+    transition: 0.2s ease all;
+
+    h4 {
+      color: #030303;
+      font-weight: 500;
+      transition: 0.2s ease all;
+    }
+
+    &:hover {
+      background-color: #ed1111;
+
+      h4 {
+        color: white;
+      }
+    }
+  }
+}

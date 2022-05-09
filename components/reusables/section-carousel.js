@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import classes from "../../styles/reusables/section-carousel.module.scss";
+import classes from "./section-carousel.module.scss";
 
 const SectionCarousel = (props) => {
   const { data, navigatorPagination } = props;
@@ -27,7 +27,7 @@ const SectionCarousel = (props) => {
 
       <ul
         className={`${classes.navigation} ${
-          navigatorPagination && classes.navigator
+          navigatorPagination ? classes.navigator : ""
         }`}
       >
         {data.map((_, i) =>
@@ -41,7 +41,7 @@ const SectionCarousel = (props) => {
             ></li>
           ) : (
             <li
-            key={i}
+              key={i}
               className={`${classes["navigator-li"]} ${
                 i === currentIndex && classes.active
               }`}

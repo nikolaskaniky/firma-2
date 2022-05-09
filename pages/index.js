@@ -9,7 +9,7 @@ import NFT from "../components/home-page/nft/nft";
 import SEO from "../components/home-page/seo/seo";
 import Start from "../components/home-page/start/start";
 import Website from "../components/home-page/website/website";
-import classes from "../styles/home-page/home-page.module.scss";
+import classes from "./index.module.scss";
 
 const HomePage = () => {
   const homeRef = useRef();
@@ -20,15 +20,29 @@ const HomePage = () => {
   const [isRendered, setIsRendered] = useState(false);
   const [leftDistance, setLeftDistance] = useState();
 
-  useEffect(() => {
-    setLeftDistance(homeRef.current.offsetLeft);
-    setIsRendered(true);
-  }, []);
+  const myArray = [
+    {
+      name: "Adidasi",
+      category: "haine",
+    },
 
-  isRendered &&
-    window.addEventListener("resize", () => {
-      setLeftDistance(homeRef.current.offsetLeft);
-    });
+    {
+      name: "hanorac",
+      category: "haine",
+    },
+
+    {
+      name: "laptop",
+      category: "electrocasnice",
+    },
+  ];
+
+  const categories = myArray.reduce((acc, cur) => {
+    acc[cur.category] = (acc[cur.category] || 0) + 1;
+    return acc
+  }, {})
+
+  console.log(categories)
 
   return (
     <main className={classes["home-page"]} ref={homeRef}>
@@ -52,17 +66,6 @@ const HomePage = () => {
       <h1 className={classes["section-name"]}>Start a project with CA23</h1>
       <Start />
       <h1 className={classes["section-name"]}>Footer</h1>
-
-      {/* <div
-        className={classes["side-navigator"]}
-        style={{
-          left: leftDistance - 120 + "px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "20px",
-        }}
-      >
-      </div> */}
     </main>
   );
 };

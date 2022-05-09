@@ -1,8 +1,7 @@
 import React from "react";
-import HomeCTA from "../../../../reusables/home-cta";
 import HomePresentation from "../../../../reusables/home-presentation";
 import content from "../../../../../assets/images/home-page/website/content@3x.png";
-import classes from "../../../../../styles/home-page/website/content.module.scss";
+import CTASection from "../../../ui/cta-section/cta-section";
 
 const WebsiteContent = () => {
   return (
@@ -27,13 +26,12 @@ const WebsiteContent = () => {
           </h4>
         }
       />
-      <HomeCTA
-        src={content}
-        linkTo={"/website"}
-        buttonText={"See our models"}
-        containerStyle={classes["image-container"]}
-        contentStyle={classes.content}
-        ctaStyle={classes.cta}
+      <CTASection
+        image={content}
+        width="570"
+        height="442"
+        buttonText="See our models"
+        linkTo='/models'
       />
     </>
   );

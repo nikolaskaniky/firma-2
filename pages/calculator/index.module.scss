@@ -1,0 +1,31 @@
+@import "../../styles/helpers.scss";
+
+.calculator-page {
+  @include page-config;
+
+  .go-back-wrapper {
+    @include center;
+    justify-content: flex-start;
+    padding: 20px 0;
+
+    .back-container {
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+      cursor: pointer;
+
+      p {
+        color: #5c69e3;
+        font-size: 1.2rem;
+        font-weight: 500;
+        user-select: none;
+      }
+
+      svg {
+        width: 40px;
+        height: 40px;
+        color: #5c69e3;
+      }
+    }
+  }
+}

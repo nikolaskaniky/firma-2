@@ -1,8 +1,7 @@
 import React from "react";
 import HomePresentation from "../../../../reusables/home-presentation";
-import HomeCTA from "../../../../reusables/home-cta";
 import navigator from "../../../../../assets/images/home-page/website/navigator@3x.png";
-import classes from "../../../../../styles/home-page/website/navigator.module.scss";
+import CTASection from "../../../ui/cta-section/cta-section";
 
 const WebsiteNavigator = () => {
   return (
@@ -27,13 +26,12 @@ const WebsiteNavigator = () => {
           </h4>
         }
       />
-      <HomeCTA
-        src={navigator}
-        linkTo={"/website"}
-        buttonText={"See our models"}
-        containerStyle={classes["image-container"]}
-        contentStyle={classes.content}
-        ctaStyle={classes.cta}
+      <CTASection
+        image={navigator}
+        width="551"
+        height="289"
+        buttonText="See our models"
+        linkTo='/models'
       />
     </>
   );

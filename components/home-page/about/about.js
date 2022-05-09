@@ -1,11 +1,9 @@
 import React from "react";
-import classes from "../../../styles/home-page/about/about.module.scss";
-import AboutNavigation from "./about-navigation";
 import AboutMain from "./slides/main/about-main";
-import SectionCarousel from "../../reusables/section-carousel";
 import AboutFounders from "./slides/founders/about-founders";
 import AboutTeam from "./slides/team/about-team";
 import AboutTools from "./slides/tools/about-tools";
+import CarouselSection from '../ui/carousel-section/carousel-section';
 
 const About = () => {
   const data = [
@@ -30,13 +28,7 @@ const About = () => {
     },
   ];
 
-  return (
-    <div className={classes.about}>
-      <SectionCarousel data={data} navigatorPagination>
-        {/* <AboutNavigation /> */}
-      </SectionCarousel>
-    </div>
-  );
+  return <CarouselSection data={data} />
 };
 
 export default About;

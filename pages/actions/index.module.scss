@@ -1,0 +1,5 @@
+@import "../../styles/globally-styles.scss";
+
+.actions-page {
+  @include page-config;
+}

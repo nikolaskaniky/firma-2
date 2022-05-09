@@ -1,0 +1,62 @@
+@import "../../../../styles/helpers.scss";
+
+.link-box {
+  max-width: 410px;
+  width: 100%;
+  margin: auto;
+  @include profile-section-config;
+
+  .title {
+    margin-bottom: 60px;
+
+    h4 {
+      color: #5c69e3;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+
+    .label {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      label {
+        color: #5c69e3;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      input {
+        width: 100%;
+        height: 56px;
+        border-radius: 14px;
+        border: none;
+        outline: none;
+        box-shadow: 0 1px 15px 0 #d6d6e8;
+        padding: 20px;
+
+        &::placeholder {
+          color: #2a2755;
+          font-family: Poppins, sans-serif;
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 56px;
+      background-color: #5c69e3;
+      color: white;
+      border-radius: 14px;
+
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+  }
+}

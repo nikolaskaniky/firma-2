@@ -1,0 +1,10 @@
+@import '../calculator-page-reusable.module.scss';
+
+.box {
+    @include box-area;
+}
+
+.form-container {
+    background-color: transparent;
+    box-shadow: none;
+}

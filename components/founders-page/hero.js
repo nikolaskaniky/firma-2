@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import classes from "../../styles/founders-page/founders-page.module.scss";
+import classes from "./founders.module.scss";
 
 const Hero = (props) => {
   const { founder } = props;

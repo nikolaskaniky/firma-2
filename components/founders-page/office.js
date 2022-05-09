@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import classes from "../../styles/founders-page/founders-page.module.scss";
+import classes from "./founders.module.scss";
 
 const Office = (props) => {
   const { founder } = props;
@@ -14,7 +14,7 @@ const Office = (props) => {
 
       <div className={classes["image-wrapper"]}>
         <div className={classes.image}>
-          <Image src={founder.office.image} />
+          <Image layout="fill" src={founder.office.image} objectFit='contain' alt='img' />
         </div>
       </div>
     </section>

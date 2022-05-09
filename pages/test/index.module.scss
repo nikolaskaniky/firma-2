@@ -1,0 +1,37 @@
+@import "../../styles/helpers.scss";
+
+.test-page {
+  @include page-config;
+
+  ul.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+
+    li.profile-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      .bubble {
+        width: 14px;
+        height: 14px;
+        border: 1px solid black;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+
+        .fill {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: red;
+          top: 0;
+          left: 0;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

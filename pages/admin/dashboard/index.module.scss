@@ -1,0 +1,12 @@
+@import "../../../styles/globally-styles.scss";
+
+main.dashboard-page {
+  @include page-config;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.components-wrapper {
+  width: 100%;
+}

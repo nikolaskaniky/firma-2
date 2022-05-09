@@ -1,0 +1,24 @@
+.navigation {
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0px 1px 4px #9194d1;
+  padding: 20px 0px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+  grid-column: 1 / 3;
+  margin: 60px auto 0 auto;
+
+  p {
+    color: #c0bdd8;
+    font-weight: 400;
+    cursor: pointer;
+
+    &.active {
+      color: #4e5de5;
+      font-weight: 500;
+    }
+  }
+}

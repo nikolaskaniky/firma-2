@@ -1,0 +1,351 @@
+@import "../../styles/helpers.scss";
+
+header.header {
+  max-width: 600px;
+  width: 100%;
+  height: 71px;
+  border-radius: 20px;
+  box-shadow: 0 1px 10px 0 #d6d6e8;
+  background-color: #fff;
+  margin: 40px auto;
+
+  @include center;
+  justify-content: space-evenly;
+  p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: #575757;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    &.active {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #7168d6;
+        animation: line-growth 0.4s forwards;
+      }
+    }
+  }
+}
+
+section.hero {
+  @include basic-section-config;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 40px;
+
+  .presentation {
+    .year {
+      h1 {
+        font-size: 2.4rem;
+        font-weight: 500;
+        letter-spacing: 4px;
+        color: #505050;
+        text-align: end;
+
+        span {
+          color: rgb(45, 108, 245);
+        }
+      }
+    }
+
+    .name {
+      h1 {
+        text-shadow: 0 1px 3px #d6d6e8;
+        font-size: 5rem;
+        font-weight: normal;
+        letter-spacing: 37.6px;
+        color: #00063b;
+      }
+    }
+
+    .specialization {
+      h4 {
+        text-shadow: 0 1px 3px #d6d6e8;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 2.5px;
+        color: #3544cb;
+      }
+    }
+
+    .media {
+      display: flex;
+      gap: 20px;
+      width: 20px;
+      margin: 20px 0 40px 0;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .description {
+      max-width: 680px;
+      width: 100%;
+
+      p {
+        text-shadow: 0 1px 2px #d6d6e8;
+        font-family: Poppins;
+        font-size: 1.3rem;
+        font-weight: normal;
+        line-height: 1.8;
+        letter-spacing: 1px;
+        color: #858498;
+      }
+    }
+  }
+
+  .image-wrapper {
+    width: 100%;
+    .image {
+      position: relative;
+      max-width: 253px;
+      width: 100%;
+      height: 253px;
+    }
+  }
+}
+
+section.office {
+  @include basic-section-config;
+  margin: 60px 0;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+
+  .presentation {
+    @include center;
+    flex-direction: column;
+    align-items: flex-start;
+    h1 {
+      text-shadow: 0 1px 2px #d6d6e8;
+      font-size: 1.7rem;
+      font-weight: 500;
+      letter-spacing: 1.35px;
+      color: #00063b;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 440px;
+      width: 100%;
+
+      text-shadow: 0 1px 2px #d6d6e8;
+      font-size: 1.1rem;
+      font-weight: normal;
+      line-height: 1.67;
+      letter-spacing: 0.9px;
+      color: #858498;
+    }
+  }
+
+  .image-wrapper {
+    width: 100%;
+
+    .image {
+      position: relative;
+      max-width: 400px;
+      width: 100%;
+      height: 340px;
+      border-radius: 15px;
+    }
+  }
+}
+
+.certificates {
+  @include basic-section-config;
+  margin: 60px 0;
+
+  h1 {
+    font-size: 2.6rem;
+    margin-bottom: 40px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    color: #393939;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(530px, 530px));
+    row-gap: 40px;
+    justify-content: space-between;
+
+    li {
+      cursor: pointer;
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 1px 6px 0 #d6d6e8;
+      background-color: #fff;
+      align-items: center;
+
+      p {
+        text-shadow: 0 1px 2px #d6d6e8;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #525252;
+      }
+    }
+  }
+}
+
+section.skills {
+  @include basic-section-config;
+
+  h1 {
+    font-size: 2.6rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #00063b;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    justify-content: space-between;
+    margin-top: 60px;
+
+    .card {
+      .title {
+        h4 {
+          font-size: 1.1rem;
+          font-weight: 500;
+          color: #00063b;
+        }
+      }
+
+      .table {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .element {
+          .info {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+              font-size: 1rem;
+              font-weight: 500;
+              color: #5c69e3;
+            }
+          }
+
+          .bar {
+            margin-top: 8px;
+            width: 100%;
+            height: 8px;
+            border-radius: 10px;
+            background-color: black;
+            position: relative;
+
+            .fill {
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              width: 4rem;
+              background-color: #9186ff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes line-growth {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: $tablet-bkpt) {
+  section.hero {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+
+    .image-wrapper {
+      @include center;
+    }
+  }
+
+  section.office {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 40px;
+
+    .presentation {
+      @include center;
+
+      text-align: center;
+    }
+
+    .image-wrapper {
+      @include center;
+    }
+  }
+
+  section.certificates {
+    text-align: center;
+
+    ul {
+      grid-template-columns: 1fr;
+
+      li {
+        @include center;
+      }
+    }
+  }
+
+  section.skills {
+    text-align: center;
+
+    .cards {
+      grid-template-columns: minmax(260px, 400px);
+      justify-content: center;
+      row-gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  section.hero {
+    .presentation {
+      .name {
+        h1 {
+          font-size: 2rem;
+          letter-spacing: 14px;
+        }
+      }
+
+      .specialization {
+        h4 {
+            font-size: 1rem;
+        }
+    }
+    }
+
+  }
+
+  .certificates {
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+}

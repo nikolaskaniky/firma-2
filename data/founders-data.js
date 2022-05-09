@@ -1,6 +1,6 @@
 import ionela from "../assets/images/team/ionela.jpg";
 import sample from "../assets/images/team/sample@3x.png";
-import office from '../assets/images/founders-page/office@3x.png';
+import office from "../assets/images/founders-page/office@3x.png";
 
 import {
   FaLinkedinIn,
@@ -20,6 +20,31 @@ export const foundersData = [
     isFounder: true,
     description:
       "ndustry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type. And scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+    table: [
+      {
+        program: 4,
+        type: "PART-TIME",
+        pricePerHour: 36,
+        description:
+          "Cu exceptia terminarii mai rapida a proiectului va ramane suma stabilita. Spre exemplu: suma pe 3 luni si eu termin intr-o luna imi iau suma pentru 3 luni.",
+      },
+
+      {
+        program: 8,
+        type: "NORMAL",
+        pricePerHour: 63,
+        description:
+          "Cu exceptia terminarii mai rapida a proiectului va ramane suma stabilita. Spre exemplu: suma pe 3 luni si eu termin intr-o luna imi iau suma pentru 3 luni.",
+      },
+
+      {
+        program: 12,
+        type: "SUPLIMENTAR",
+        pricePerHour: 126,
+        description:
+          "Cu exceptia terminarii mai rapida a proiectului va ramane suma stabilita. Spre exemplu: suma pe 3 luni si eu termin intr-o luna imi iau suma pentru 3 luni.",
+      },
+    ],
   },
 
   {
@@ -183,27 +208,27 @@ export const main_founders = [
     specialization: "UI / UX Web Designer & Developer",
     description:
       "I’m a certified UI/UX Web Designer, who likes to help you and your business improve and create new features that drives the final product on higher place on the market.",
-      media: [
-        {
-          image: <FaLinkedinIn />,
-          linkTo: "/linked",
-        },
-  
-        {
-          image: <FaInstagram />,
-          linkTo: "/insta",
-        },
-  
-        {
-          image: <FaDribbble />,
-          linkTo: "/dribbble",
-        },
-  
-        {
-          image: <FaBehance />,
-          linkTo: "/behance",
-        },
-      ],
+    media: [
+      {
+        image: <FaLinkedinIn />,
+        linkTo: "/linked",
+      },
+
+      {
+        image: <FaInstagram />,
+        linkTo: "/insta",
+      },
+
+      {
+        image: <FaDribbble />,
+        linkTo: "/dribbble",
+      },
+
+      {
+        image: <FaBehance />,
+        linkTo: "/behance",
+      },
+    ],
     office: {
       title: "My Office Paris",
       description:

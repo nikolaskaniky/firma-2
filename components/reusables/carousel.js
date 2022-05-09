@@ -2,7 +2,7 @@ import React, { useEffect, useCallback, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import classes from "../../styles/reusables/carousel.module.scss";
+import classes from "./carousel.module.scss";
 
 // const DotButton = ({selected, onClick}) => (
 //     <div className={}>

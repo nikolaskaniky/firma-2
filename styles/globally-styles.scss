@@ -1,0 +1,37 @@
+//todo || custom scrollbar.
+$main-blue: #5c69e3;
+$darken-blue: #3948d1;
+
+@mixin page-config {
+  max-width: 1366px;
+  width: 100%;
+  margin: auto;
+  background-color: transparent;
+  padding: 10px;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f0f1ff;
+    margin: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $main-blue;
+    border-radius: 9999px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $darken-blue;
+  }
+}

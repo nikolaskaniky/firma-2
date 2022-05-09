@@ -1,0 +1,202 @@
+@import "../../styles/helpers.scss";
+
+
+
+//! main section
+
+.main-section {
+  h1 {
+    text-shadow: 0 1px 3px #d6d6e8;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #5c69e3;
+    margin-bottom: 20px;
+  }
+
+  .profile {
+    @include basic-section-config;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 380px));
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    .input {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+
+      label {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #3544cb;
+      }
+
+      input {
+        height: 59px;
+        border-radius: 10px;
+        border: solid 2px #a5abe2;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #00063b;
+        padding: 10px 20px;
+        width: 100%;
+      }
+    }
+  }
+
+  .language {
+    position: relative;
+    @extend .profile;
+
+    p.add {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+
+    .input {
+        ul.level-box {
+          height: 59px;
+          border-radius: 10px;
+          border: solid 2px #a5abe2;
+          color: #00063b;
+          width: 100%;
+          cursor: pointer;
+          @include center;
+          padding: 0 20px;
+          justify-content: flex-start;
+          position: relative;
+
+          p.delete {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+
+            &:hover {
+              background-color: red;
+            }
+          }
+
+          li {
+            text-transform: capitalize;
+          }
+
+          .dropdown {
+            position: absolute;
+            left: 0;
+            background-color: white;
+            border-radius: 20px;
+            top: calc(100% + 20px);
+            width: 100%;
+            box-shadow: 0 1px 10px 0 #d6d6e8;
+            z-index: 200;
+
+            .item {
+              p {
+                padding: 20px;
+                text-transform: capitalize;
+                position: relative;
+
+                &:hover {
+                    color: #5c69e3;
+                }
+
+                &.active {
+                  color: #5c69e3;
+                  font-weight: 500;
+
+                  &::before {
+                    content: '';
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 6px;
+                    height: 6px;
+                    background-color: #5c69e3;
+                    border-radius: 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+
+  .links {
+    @extend .profile;
+    position: relative;
+
+    p.add {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .hobby {
+    @include basic-section-config;
+    position: relative;
+    margin-bottom: 60px;
+
+    .line {
+      position: absolute;
+      width: 2px;
+      height: 70px;
+      background-color: #bee6ef;
+      left: 16px;
+      top: 60px;
+    }
+
+    .textarea-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+
+      label {
+        color: #3544cb;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      textarea {
+        height: 200px;
+        border: solid 2px #a5abe2;
+        border-radius: 15px;
+        padding: 10px 20px;
+        resize: none;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #00063b;
+      }
+    }
+  }
+
+  .description {
+    @extend .hobby;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1250px) {
+  form.form {
+    grid-template-columns: minmax(240px, 240px) minmax(400px, 900px);
+  }
+
+  .main-section {
+    .profile {
+      grid-template-columns: minmax(200px, 400px);
+      justify-content: center;
+
+      .cv-label {
+        @include center;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../styles/helpers.scss";
+
+main.profile-page {
+  @include page-config;
+  background-color: white;
+  padding: 60px 30px;
+  border-radius: 14px;
+  box-shadow: 0 1px 15px 0 #d6d6e8;
+
+  .title {
+    @include center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 500;
+      color: #3544cb;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #2a2755;
+      font-weight: 500;
+    }
+  }
+}

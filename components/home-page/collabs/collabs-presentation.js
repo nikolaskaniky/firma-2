@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../../styles/home-page/collabs/collabs.module.scss";
+import classes from "./collabs.module.scss";
 
 const CollabsPresentation = () => {
   return (

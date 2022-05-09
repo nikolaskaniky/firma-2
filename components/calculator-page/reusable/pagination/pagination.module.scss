@@ -1,0 +1,87 @@
+@import '../../../../styles/helpers.scss';
+
+ul.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 70px 0 100px 0;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      .numerotation {
+        .line {
+          display: none;
+        }
+      }
+    }
+
+    .numerotation {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .circle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #a5abe2;
+        border-radius: 50%;
+        @include center;
+        position: relative;
+
+        svg.check {
+          color: #00cc20;
+          width: 28px;
+          height: 20px;
+        }
+
+        p {
+          color: #a5abe2;
+        }
+
+        h4 {
+          @include center;
+          position: absolute;
+          bottom: -40px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 140px;
+          color: #3544cb;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+
+        &.active {
+          border: 2.2px solid #ff7f00;
+
+          p {
+            color: #3544cb;
+            font-weight: 500;
+          }
+        }
+
+        &.finished {
+          border: 2.2px solid #00cc20;
+        }
+      }
+
+      .line {
+        height: 2px;
+        width: 100px;
+        background-color: #a5abe2;
+
+        &.active {
+          background-color: #ff7f00;
+        }
+
+        &.finished {
+          background-color: #00cc20;
+        }
+      }
+    }
+  }
+}

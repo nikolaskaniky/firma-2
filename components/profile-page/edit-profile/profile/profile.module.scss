@@ -1,0 +1,145 @@
+@import "../../../../styles/helpers.scss";
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.add-photo-box {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .add-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 1px 15px 0 #d6d6e8;
+    overflow: hidden;
+    cursor: pointer;
+    @include center;
+    position: relative;
+  }
+
+  .upload-button,
+  .delete-button {
+    max-width: 250px;
+    width: 100%;
+    height: 56px;
+    @include center;
+    box-shadow: 0 1px 15px 0 #d6d6e8;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  .upload-button {
+    background-color: #5c69e3;
+    color: white;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+}
+
+//! gender
+
+.select-gender-box {
+  max-width: 282px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  .gender {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    user-select: none;
+
+    p {
+      cursor: pointer;
+    }
+
+    .select {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #5c69e3;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+
+      .fill {
+        &.active {
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #5c69e3;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//! name birth
+
+.name-birth-box {
+  max-width: 410px;
+  margin: auto;
+
+  h4 {
+    margin-bottom: 60px !important;
+  }
+
+  .label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    label {
+      color: #5c69e3;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    input {
+      width: 100%;
+      height: 56px;
+      border-radius: 14px;
+      border: none;
+      outline: none;
+      box-shadow: 0 1px 15px 0 #d6d6e8;
+      padding: 20px;
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 56px;
+    background-color: #5c69e3;
+    color: white;
+    border-radius: 14px;
+
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 40px
+  }
+}
+
+.phone-box {
+  @extend .name-birth-box;
+}
+
+.address-box {
+  @extend .name-birth-box;
+}

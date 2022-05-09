@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import classes from "../../styles/reusables/navigation-header.module.scss";
+import classes from "./navigation-header.module.scss";
 
 const dummy_navigation = [
   {

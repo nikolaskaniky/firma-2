@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../styles/founders-page/founders-page.module.scss";
+import classes from "./founders.module.scss";
 
 const Header = (props) => {
   const { founders, selectedFounder, selectedFounderHandler } = props;

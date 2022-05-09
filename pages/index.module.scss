@@ -1,0 +1,30 @@
+@import "../styles/helpers.scss";
+
+main.home-page {
+  @include page-config;
+
+  .section-name {
+    @include section-name-home-config;
+  }
+}
+
+.side-navigator {
+  max-width: 100px;
+  width: 100%;
+  background-color: lightseagreen;
+  @include center;
+  position: fixed;
+  top: 16vh;
+  height: 400px;
+  border-radius: 14px;
+  color: white;
+  text-shadow: 0 0 4px black;
+
+  p {
+    cursor: pointer;
+  }
+}
+
+.active {
+  color: darkblue;
+}

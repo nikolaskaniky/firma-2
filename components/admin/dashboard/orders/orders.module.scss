@@ -1,0 +1,61 @@
+@import "../../../../styles/globally-styles.scss";
+
+.orders-type-bar {
+  display: flex;
+  gap: 50px;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+
+  p {
+    color: #5c69e3;
+    cursor: pointer;
+    user-select: none;
+
+    &.active {
+      position: relative;
+      color: #2a2755;
+      font-weight: 500;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: #2a2755;
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(100% + 7px);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+//! order categories.
+.order-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-transform: uppercase;
+
+  .card {
+    height: 250px;
+    @include center;
+    cursor: pointer;
+    transition: 0.2s ease all;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #5c69e3;
+      transition: 0.2s ease all;
+    }
+
+    &:hover {
+      background-color: #5c69e3;
+      h1 {
+        color: white;
+      }
+    }
+  }
+}

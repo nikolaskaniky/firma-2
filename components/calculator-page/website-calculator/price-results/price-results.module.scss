@@ -1,0 +1,86 @@
+@import '../../../../styles/helpers.scss';
+
+section.price-results {
+  position: relative;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: absolute;
+  top: calc(100% + 100px);
+
+  button {
+    padding: 20px;
+    background-color: lightcoral;
+  }
+}
+
+ul.table {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+
+  .top-labels {
+    display: flex;
+    gap: 24px;
+    @include center;
+
+    .min-label {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 981px;
+      width: 100%;
+      padding: 0 20px;
+
+      p {
+        grid-column: 3 / 4;
+        max-width: 100px;
+        @include center;
+      }
+    }
+
+    .max-label {
+      padding: 0 20px;
+      max-width: 134px;
+      width: 100%;
+      @include center;
+    }
+  }
+
+  li.row {
+    display: flex;
+    gap: 24px;
+    @include center;
+
+    .wrapper {
+      padding: 20px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0px 1px 8px #d6d6e8;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 981px;
+      width: 100%;
+
+      .price {
+        max-width: 100px;
+        width: 100%;
+        @include center;
+      }
+    }
+
+    .wrapper-max-price {
+      padding: 20px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0px 1px 8px #d6d6e8;
+      max-width: 134px;
+      width: 100%;
+      @include center;
+    }
+  }
+}

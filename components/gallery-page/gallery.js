@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import classes from "../../styles/gallery-page/gallery-page.module.scss";
-import GalleryNavigation from "../home-page/gallery/gallery-navigation";
+import classes from "./gallery.module.scss";
 import GalleryCards from "./gallery-cards";
 import GalleryCTA from "./gallery-cta";
 import GalleryPresentation from "./gallery-presentation";
@@ -15,7 +14,6 @@ const Gallery = (props) => {
 
   return (
     <>
-      <GalleryNavigation styleClass={classes.navigator} />
 
       <section className={classes.gallery}>
         <GalleryPresentation

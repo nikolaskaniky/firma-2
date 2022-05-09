@@ -1,0 +1,71 @@
+@import "../../../styles/helpers.scss";
+@import "../../../pages/helpers.scss";
+
+.nft {
+  padding: 60px 30px;
+}
+
+.presentation {
+  .nr {
+    @include nr-config;
+  }
+
+  .title-wrapper {
+    .pre {
+      @include pre-title-config;
+    }
+
+    .main {
+      @include title-config;
+      h1 {
+        text-shadow: 0 1px 8px #d6d6e8;
+        color: #5dc1ff;
+      }
+    }
+
+    .sub {
+      h4 {
+        text-shadow: 0 1px 6px #d6d6e8;
+        font-size: 3.1rem;
+        font-weight: 500;
+        color: #ff83a0;
+      }
+    }
+  }
+}
+
+.cta {
+  .content {
+    // max-width: 605px;
+    width: 100%;
+
+    .image-container {
+      height: 613px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .presentation {
+    .nr {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+
+    .title-wrapper {
+      .main {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+
+      .sub {
+        h4 {
+          font-size: 2.9rem;
+        }
+      }
+    }
+  }
+}

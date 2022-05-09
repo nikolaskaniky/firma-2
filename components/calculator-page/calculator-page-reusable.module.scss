@@ -1,0 +1,35 @@
+@mixin box-area {
+  background-color: #f0f1f8;
+  padding: 60px 80px;
+  border-radius: 15px;
+  margin-bottom: 100px;
+}
+
+@mixin label {
+  max-width: 200px;
+  width: 100%;
+  text-align: end;
+  color: #313eb9;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+@mixin input-box {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 14px rgb(200, 200, 200);
+  cursor: pointer;
+
+  p {
+    width: auto;
+    font-weight: 500;
+  }
+}
+
+@mixin result {
+  
+}

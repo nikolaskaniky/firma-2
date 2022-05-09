@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../styles/gallery-page/gallery-page.module.scss";
+import classes from "./gallery.module.scss";
 
 const GalleryPresentation = (props) => {
   const { array, selectedCategoryHandler, selectedCategory } = props;

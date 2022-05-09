@@ -1,0 +1,106 @@
+@import "../../../../styles/helpers.scss";
+@import "../../calculator-page-reusable.module.scss";
+
+ul.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+
+  .total {
+    display: grid;
+    grid-template-columns: 200px 300px 150px;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+
+    .input-box {
+      @include input-box;
+      @include center;
+    }
+
+    p {
+      @include label;
+    }
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: 200px 300px 150px;
+
+    column-gap: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      @include label;
+      display: grid;
+    }
+
+    .dropdown-input {
+      @include input-box;
+
+      @include center;
+
+      .dropdown-list {
+        position: absolute;
+        top: calc(100% + 8px);
+        background-color: white;
+        width: 100%;
+        z-index: 100;
+        border-radius: 10px;
+        box-shadow: 0 0 14px rgb(200, 200, 200);
+
+        .option {
+          padding: 20px 0px;
+          @include center;
+          p {
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: -2px;
+              width: 0;
+              height: 1.2px;
+              background-color: #313eb9;
+            }
+          }
+
+          &:hover {
+            p {
+              position: relative;
+              &::before {
+                transition: 0.4s ease all;
+
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                width: 100%;
+                height: 1.2px;
+                background-color: #313eb9;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .price-input {
+      @include center;
+      @include input-box;
+    }
+  }
+
+  .button {
+    background-color: #5c69e3;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%;
+    height: 56px;
+    color: white;
+    @include center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}

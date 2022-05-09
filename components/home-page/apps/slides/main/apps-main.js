@@ -1,8 +1,7 @@
 import React from "react";
 import HomePresentation from "../../../../reusables/home-presentation";
-import HomeCTA from "../../../../reusables/home-cta";
 import apps from "../../../../../assets/images/home-page/apps/apps@3x.png";
-import classes from "../../../../../styles/home-page/apps/apps.module.scss";
+import CTASection from '../../../ui/cta-section/cta-section';
 
 const AppsMain = () => {
   return (
@@ -20,14 +19,8 @@ const AppsMain = () => {
           </p>
         }
       />
-      <HomeCTA
-        src={apps}
-        linkTo={"/apps"}
-        buttonText={"Simulate app price"}
-        containerStyle={classes["image-container"]}
-        contentStyle={classes.content}
-        ctaStyle={classes.cta}
-      />
+
+      <CTASection image={apps} width='451' height='561' buttonText='Simulate app price' linkTo='apps' />
     </>
   );
 };

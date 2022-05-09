@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import classes from "../../styles/about-page/franchise.module.scss";
+import classes from "./franchise.module.scss";
 import franchise from '../../assets/images/about-page/franchise@3x.png';
 
 const Franchise = () => {
@@ -22,7 +22,7 @@ const Franchise = () => {
 
       <div className={classes['image-wrapper']}>
           <div className={classes.image}>
-              <Image src={franchise} layout="fill" alt='image' />
+              <Image src={franchise} layout="responsive" alt='image' />
           </div>
       </div>
     </section>

@@ -1,0 +1,72 @@
+@mixin box-config {
+  width: 100%;
+  border-radius: 20px;
+  padding: 67px 30px;
+  box-shadow: 0px 1px 15px rgba(0, 101, 239, 0.15);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  background-color: white;
+}
+
+@mixin nr-config {
+  margin-bottom: 80px;
+
+  h1 {
+    color: #5499c4c3;
+    font-size: 6.25rem;
+    font-weight: 400;
+  }
+}
+
+@mixin pre-title-config {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+
+  .line {
+    background-color: #ff760d;
+    width: 45px;
+    height: 2px;
+  }
+
+  p {
+    color: #ff760d;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+}
+
+@mixin title-config {
+  h1 {
+    color: #d6d6e8;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+}
+
+@mixin text-config {
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  p {
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1.67;
+    color: #858498;
+    font-weight: 500;
+  }
+}
+
+@mixin subtext-config {
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 2;
+  color: #272640;
+  text-align: center;
+  display: inline-block;
+  margin-top: 8px;
+}

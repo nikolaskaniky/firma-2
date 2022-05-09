@@ -1,0 +1,10 @@
+@import "../../styles/helpers.scss";
+
+main.gallery-page {
+  @include page-config;
+  .navigator {
+    margin: 20px auto;
+  }
+}
+
+

@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import classes from "../../styles/about-page/start-up.module.scss";
+import classes from "./start-up.module.scss";
 import start from "../../assets/images/about-page/start@3x.png";
 
 const StartUp = () => {
   return (
     <section className={classes["start-up"]}>
       <div className={classes.image}>
-        <Image src={start} layout="fill" alt="image" objectFit="cover" />
+        <Image src={start} layout="responsive" alt="image" />
       </div>
 
       <div className={classes["title-wrapper"]}>

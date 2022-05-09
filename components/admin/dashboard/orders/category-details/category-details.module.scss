@@ -1,0 +1,45 @@
+.category-details {
+  position: relative;
+
+  .back {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 100;
+    user-select: none;
+
+    svg {
+      color: #5c69e3;
+      width: 36px;
+      height: 36px;
+    }
+
+    h4 {
+      color: #5c69e3;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      color: #5c69e3;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      color: #2a2755;
+      font-weight: 500;
+    }
+  }
+}

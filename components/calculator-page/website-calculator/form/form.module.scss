@@ -1,0 +1,25 @@
+@import '../../../../styles/helpers.scss';
+
+section.form {
+display: flex;
+flex-direction: column;
+position: relative;
+@include center;
+
+  button {
+    position: absolute;
+    top: calc(100% + 100px);
+    padding: 20px;
+    background-color: lightcyan;
+  }
+
+  textarea {
+    resize: none;
+    border-radius: 14px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(121, 121, 121, 0.581);
+    padding: 20px;
+    font-family: 'Poppins';
+    font-size: 1rem;
+  }
+}

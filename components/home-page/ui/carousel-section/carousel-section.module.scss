@@ -1,0 +1,29 @@
+@import "../../../../styles/globally-styles.scss";
+
+.box {
+  padding: 60px 30px;
+}
+
+.navigation {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0px 1px 4px #9194d1;
+  margin: auto;
+  margin-top: 90px;
+  padding: 20px 0;
+  gap: 30px;
+
+  li {
+    color: #c0bdd8;
+    font-weight: 400;
+    cursor: pointer;
+
+    &.active {
+      color: #4e5de5;
+      font-weight: 500;
+    }
+  }
+
+  @include center;
+}

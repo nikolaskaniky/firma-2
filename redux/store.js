@@ -4,18 +4,34 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import { persistReducer } from "redux-persist";
 import storageSession from "redux-persist/lib/storage/session";
 import thunk from "redux-thunk";
+import { selectedPageReducer } from "./reducers/actions-page-reducers";
+import { selectedCVSkillReducer } from "./reducers/cv-skill-reducers";
 import { selectedPricingUserReducer } from "./reducers/pricing-reducers";
+import { selectedCalculatorReducer } from "./reducers/selected-calculator-reducers";
+import { testReducer } from "./reducers/test-reducers";
+import {
+  updateUserProfileReducer,
+  userDetailsReducer,
+  userLoginReducer,
+} from "./reducers/users-reducers";
 
 let store;
 
 const reducers = combineReducers({
   selectedPricingUser: selectedPricingUserReducer,
+  selectedCVSkill: selectedCVSkillReducer,
+  selectedCalculator: selectedCalculatorReducer,
+  userLogin: userLoginReducer,
+  userDetails: userDetailsReducer,
+  updateUserProfile: updateUserProfileReducer,
+  test: testReducer,
+  selectedPage: selectedPageReducer,
 });
 
 const persistConfig = {
   key: "root",
   storage: storageSession,
-  whitelist: [""], // place to select which state you want to persist
+  whitelist: ["selectedCalculator", "selectedCVSkill", "selectedPage"],
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers);

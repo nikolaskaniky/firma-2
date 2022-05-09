@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../../styles/home-page/gallery/gallery.module.scss";
+import classes from "./gallery.module.scss";
 
 const dummy_tags = [
   {

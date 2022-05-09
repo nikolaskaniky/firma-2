@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../styles/pricing-page/pricing-page.module.scss";
+import classes from "./pricing.module.scss";
 import { foundersData } from "../../data/founders-data";
 import { useDispatch, useSelector } from "react-redux";
 import { getPricingUserAction } from "../../redux/actions/pricing-actions";

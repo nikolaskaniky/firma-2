@@ -1,0 +1,96 @@
+@import '../../../../styles/helpers.scss';
+
+.calculator {
+  @include center;
+  flex-direction: column;
+  position: relative;
+
+  button {
+    padding: 18px 50px;
+    background-color: #5C69E3;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.1rem;
+    position: absolute;
+    top: calc(100% + 100px);
+  }
+}
+
+ul.tabel {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  max-width: 1000px;
+  width: 100%;
+
+  li.row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    column-gap: 60px;
+
+    h4 {
+      text-align: end;
+      color: #3544cb;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .range {
+      width: 100%;
+
+      .slider {
+        max-width: 711px;
+        width: 100%;
+        height: 5px;
+        background-color: #4234b7;
+        border-radius: 13px;
+        position: relative;
+        cursor: pointer;
+
+        .progression {
+          background-color: #c0bdd8;
+          position: absolute;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          transition: 0.2s ease all;
+        }
+
+        a.handler {
+          background-color: #4234b7;
+          cursor: pointer;
+          padding: 16px;
+          border-radius: 10px;
+          min-width: 80px;
+          @include center;
+          user-select: none;
+
+          font-size: 1rem;
+          color: white;
+          font-weight: 500;
+
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          z-index: 1000;
+          transition: 0.2s ease all;
+          // display: inline-block;
+          white-space: nowrap;
+        }
+
+        .dot {
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          background-color: black;
+          border-radius: 50%;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

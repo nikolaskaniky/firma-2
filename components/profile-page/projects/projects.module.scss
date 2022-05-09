@@ -1,0 +1,32 @@
+@import "../helpers.module.scss";
+@import "../../../styles/globally-styles.scss";
+
+section.projects {
+  @include center;
+  align-items: unset;
+
+  .upload-images-box {
+    @include box-config;
+    padding: 0;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+
+    .action {
+      max-width: 350px;
+      width: 100%;
+      background-color: #f7f8ff;
+      padding: 30px;
+    }
+
+    .results {
+      padding: 30px;
+      flex-grow: 1;
+
+      header.tabel-label {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+}

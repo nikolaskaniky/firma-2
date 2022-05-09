@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from '../../../styles/home-page/seo/seo.module.scss'
+import classes from "./seo.module.scss";
 
 const SEOPresentation = () => {
     return (

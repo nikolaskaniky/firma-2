@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../../styles/home-page/nft/nft.module.scss";
+import classes from "./nft.module.scss";
 
 const NFTPresentation = () => {
   return (

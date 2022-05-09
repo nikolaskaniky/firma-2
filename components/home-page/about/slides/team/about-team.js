@@ -1,8 +1,7 @@
 import React from "react";
 import HomePresentation from "../../../../reusables/home-presentation";
-import HomeCTA from "../../../../reusables/home-cta";
 import team from "../../../../../assets/images/home-page/about/team@3x.png";
-import classes from "../../../../../styles/home-page/about/team.module.scss";
+import CTASection from "../../../ui/cta-section/cta-section";
 
 const AboutTeam = () => {
   return (
@@ -12,7 +11,7 @@ const AboutTeam = () => {
         pre="Nice to meet you!"
         main={<h1>Our team</h1>}
         text={
-          <p className={classes["p-text"]}>
+          <p>
             We are an enthusiastic and creative team who come <br />
             up with great ideas and solutions .<br />
             Here at CA23 we are not working, we do what we like <br />
@@ -20,14 +19,7 @@ const AboutTeam = () => {
           </p>
         }
       />
-      <HomeCTA
-        src={team}
-        linkTo={"/about"}
-        buttonText={"Details"}
-        containerStyle={classes["image-container"]}
-        contentStyle={classes.content}
-        ctaStyle={classes.cta}
-      />
+       <CTASection image={team} width='382' height='428' buttonText='See details' linkTo='/details' />
     </>
   );
 };

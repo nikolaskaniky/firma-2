@@ -1,0 +1,30 @@
+.box {
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0, 101, 239, 0.15);
+  border-radius: 10px;
+  width: 100%;
+
+  h4.title {
+    color: #5c69e3;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+}
+
+@mixin row {
+  p {
+    color: black;
+  }
+
+  span {
+    color: blue;
+    font-weight: 500;
+  }
+}

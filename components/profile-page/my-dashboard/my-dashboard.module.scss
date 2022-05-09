@@ -1,0 +1,8 @@
+@import "../../../styles/helpers.scss";
+
+section.my-dashboard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}

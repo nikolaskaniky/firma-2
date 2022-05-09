@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "email": "someemail@yahoo.com",
+    "date": "01.01.2021",
+    "name": "user 1",
+    "isActive": true,
+    "country": "france",
+    "isAdmin": true,
+    "type": "admin"
+  },
+
+  {
+    "id": 1,
+    "email": "someemail@yahoo.com",
+    "date": "01.01.2021",
+    "name": "user 2",
+    "isActive": true,
+    "country": "france",
+    "isAdmin": true,
+    "type": "manager"
+  },
+
+  {
+    "id": 2,
+    "email": "someemail@yahoo.com",
+    "date": "01.01.2021",
+    "name": "user 3",
+    "isActive": false,
+    "country": "france",
+    "isAdmin": true,
+    "type": "contabil"
+  },
+
+  {
+    "id": 3,
+    "email": "someemail@yahoo.com",
+    "date": "01.01.2021",
+    "name": "user 4",
+    "isActive": true,
+    "country": "france",
+    "isAdmin": false,
+    "type": "user"
+  },
+
+  {
+    "id": 2,
+    "email": "someemail@yahoo.com",
+    "date": "01.01.2021",
+    "name": "user 3",
+    "isActive": false,
+    "country": "france",
+    "isAdmin": true,
+    "type": "contabil"
+  }
+]

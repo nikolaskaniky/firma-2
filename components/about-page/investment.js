@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import classes from "../../styles/about-page/investment.module.scss";
+import classes from "./investment.module.scss";
 import investment from '../../assets/images/about-page/investment@3x.png';
 
 const Investment = () => {
@@ -24,7 +24,7 @@ const Investment = () => {
 
       <div className={classes['image-wrapper']}>
         <div className={classes.image}>
-            <Image src={investment} layout="fill" alt='image' />
+            <Image src={investment} layout="responsive" alt='image' />
         </div>
       </div>
     </section>

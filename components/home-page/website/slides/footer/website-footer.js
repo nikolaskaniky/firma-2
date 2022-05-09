@@ -2,7 +2,7 @@ import React from "react";
 import HomePresentation from "../../../../reusables/home-presentation";
 import HomeCTA from "../../../../reusables/home-cta";
 import footer from "../../../../../assets/images/home-page/website/footer@3x.png";
-import classes from "../../../../../styles/home-page/website/footer.module.scss";
+import CTASection from "../../../ui/cta-section/cta-section";
 
 const WebsiteFooter = () => {
   return (
@@ -28,13 +28,12 @@ const WebsiteFooter = () => {
           </h4>
         }
       />
-      <HomeCTA
-        src={footer}
-        linkTo={"/website"}
-        buttonText={"See our models"}
-        containerStyle={classes["image-container"]}
-        contentStyle={classes.content}
-        ctaStyle={classes.cta}
+      <CTASection
+        image={footer}
+        width="648"
+        height="301"
+        buttonText="See models"
+        linkTo="/models"
       />
     </>
   );

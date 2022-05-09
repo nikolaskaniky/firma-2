@@ -1,0 +1,60 @@
+@import "../helpers.module.scss";
+@import "../../../styles/globally-styles.scss";
+
+section.projects-by-ca23 {
+  display: flex;
+  justify-content: center;
+
+  .box {
+    @include box-config;
+    max-width: 955px;
+    width: 100%;
+
+    h4 {
+      @include box-title;
+    }
+
+    ul.content {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(150px, 1fr));
+      justify-items: center;
+      row-gap: 30px;
+      max-height: 400px;
+      overflow: auto;
+      @include custom-scrollbar;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+
+        .image-box {
+          width: 150px;
+          height: 150px;
+          border-radius: 15px;
+          background-color: #b0b7f5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .title {
+          margin-top: 11px;
+          display: flex;
+          justify-content: center;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 100%;
+          color: #313eb9;
+
+          p {
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

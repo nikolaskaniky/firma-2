@@ -1,53 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
-import classes from "../../styles/reusables/home-cta.module.scss";
-import Link from "next/link";
+import classes from "./home-cta.module.scss";
+import { useRouter } from "next/router";
 
 const HomeCTA = (props) => {
-  const {
-    src,
-    ctaStyle,
-    contentStyle,
-    containerStyle,
-    buttonStyle,
-    buttonText,
-    buttonTextStyle,
-    linkTo,
-    scrollToButton,
-  } = props;
-  
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  const { image, buttonText, linkTo } = props;
 
-  const gallerySectionElement = mounted && document.getElementById("gallery");
-  console.log(gallerySectionElement)
+  const router = useRouter();
 
   return (
-    <div className={`${classes["home-cta"]} ${ctaStyle}`}>
-      <div className={`${classes.content} ${contentStyle}`}>
-        <div className={`${classes["image-container"]} ${containerStyle}`}>
-          <Image src={src} alt="img" layout="fill" />
-        </div>
+    <div className={classes["home-cta"]}>
+      <div className={classes.image}>
+        <Image src={image} layout="responsive" alt="image" />
+      </div>
 
-        {!scrollToButton ? (
-          <Link href={linkTo}>
-            <a>
-              <div className={`${classes.button} ${buttonStyle}`}>
-                <p className={buttonTextStyle ? buttonTextStyle : undefined}>
-                  {buttonText}
-                </p>
-              </div>
-            </a>
-          </Link>
-        ) : (
-          <div className={`${classes['scroll-button']} ${buttonStyle}`} onClick={() => gallerySectionElement.scrollIntoView({behavior: 'smooth'})}>
-            <p className={buttonTextStyle ? buttonTextStyle : undefined}>
-              {buttonText}
-            </p>
-          </div>
-        )}
+      <div className={classes.button} onClick={() => router.push(linkTo)}>
+        <p>{buttonText}</p>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../styles/reusables/home-presentation.module.scss";
+import classes from "./home-presentation.module.scss";
 
 const HomePresentation = (props) => {
   const {

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import classes from "../../styles/about-page/partnership.module.scss";
+import classes from "./partnership.module.scss";
 import partnership from "../../assets/images/about-page/partnership@3x.png";
 
 const Partnership = () => {
@@ -23,7 +23,7 @@ const Partnership = () => {
 
       <div className={classes["image-wrapper"]}>
         <div className={classes.image}>
-          <Image src={partnership} layout="fill" alt="image" />
+          <Image src={partnership} layout="responsive" alt="image" />
         </div>
       </div>
     </section>

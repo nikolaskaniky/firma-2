@@ -1,0 +1,35 @@
+@import "../../styles/helpers.scss";
+
+form.form {
+  @include page-config;
+  // padding: 60px;
+
+  .form-wrapper {
+    display: grid;
+    grid-template-columns: minmax(240px, 240px) minmax(700px, 900px);
+    align-items: start;
+    column-gap: 40px;
+  }
+
+  .submit-wrapper {
+    margin-top: 60px;
+    display: grid;
+    grid-column: 2 / 3;
+    justify-items: center;
+
+    button {
+      max-width: 301px;
+      width: 100%;
+      height: 60px;
+      border-radius: 31px;
+      background-color: #5c69e3;
+      font-size: 1.1rem;
+      color: white;
+      font-weight: 400;
+    }
+  }
+
+  @media (max-width: 1377px) {
+    padding: 60px;
+  }
+}

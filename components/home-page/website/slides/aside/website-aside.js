@@ -1,8 +1,8 @@
 import React from "react";
 import HomePresentation from "../../../../reusables/home-presentation";
-import HomeCTA from "../../../../reusables/home-cta";
 import aside from "../../../../../assets/images/home-page/website/aside@3x.png";
-import classes from "../../../../../styles/home-page/website/aside.module.scss";
+import '../../../ui/cta-section/cta-section';
+import CTASection from "../../../ui/cta-section/cta-section";
 
 const WebsiteAside = () => {
   return (
@@ -27,14 +27,7 @@ const WebsiteAside = () => {
           </h4>
         }
       />
-      <HomeCTA
-        src={aside}
-        linkTo={"/website"}
-        buttonText={"See our models"}
-        containerStyle={classes["image-container"]}
-        contentStyle={classes.content}
-        ctaStyle={classes.cta}
-      />
+      <CTASection image={aside} width='540' height='487' linkTo='/models' buttonText="See models" />
     </>
   );
 };

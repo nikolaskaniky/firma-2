@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "../../styles/founders-page/founders-page.module.scss";
+import classes from "./index.module.scss";
 import { main_founders } from "../../data/founders-data";
 import Hero from "../../components/founders-page/hero";
 import Header from "../../components/founders-page/header";

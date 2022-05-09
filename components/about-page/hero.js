@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import classes from "../../styles/about-page/hero.module.scss";
+import classes from "./hero.module.scss";
 import { foundersData } from "../../data/founders-data";
 import { useDispatch, useSelector } from "react-redux";
-import { getPricingUserAction } from '../../redux/actions/pricing-actions';
+import { getPricingUserAction } from "../../redux/actions/pricing-actions";
 import Portal from "../reusables/portal";
-import AboutPop from "./about-pop";
 
 const Hero = () => {
   const router = useRouter();
@@ -15,7 +14,7 @@ const Hero = () => {
     (state) => state.selectedPricingUserReducer
   );
   const [pop, setPop] = useState(false);
-  const popHandler = () => setPop(prev => setPop(!prev))
+  const popHandler = () => setPop((prev) => setPop(!prev));
 
   return (
     <section className={classes.hero}>
@@ -43,8 +42,8 @@ const Hero = () => {
             <div
               className={classes.button}
               onClick={() => {
-                dispatch(getPricingUserAction(member.id))
-                router.push("/colaborations/pricing")
+                dispatch(getPricingUserAction(member.id));
+                router.push("/colaborations/pricing");
               }}
             >
               <p>view pricing</p>
@@ -67,12 +66,6 @@ const Hero = () => {
           <p>Contact us</p>
         </div>
       </div>
-
-      {pop && (
-        <Portal>
-          <AboutPop popHandler={popHandler} />
-        </Portal>
-      )}
     </section>
   );
 };

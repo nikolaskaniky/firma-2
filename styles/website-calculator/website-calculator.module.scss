@@ -1,0 +1,13 @@
+@import "../helpers.scss";
+
+.website-calculator {
+  position: fixed;
+  max-width: 1366px;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f1f8;
+
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

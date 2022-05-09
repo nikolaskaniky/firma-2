@@ -1,0 +1,33 @@
+@import "../../../../styles/helpers.scss";
+
+.navbar {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 60px;
+  @include center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  user-select: none;
+
+  li {
+    color: #5c69e3;
+
+    &.active {
+      color: #2a2755;
+      position: relative;
+      font-weight: 500;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: calc(100% + 7px);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #ff7f00;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

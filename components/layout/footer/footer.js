@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import classes from "../../../styles/footer/footer.module.scss";
+import classes from "./footer.module.scss";
 
 import fb from "../../../assets/images/footer/fb.svg";
 import yt from "../../../assets/images/footer/yt.svg";

@@ -8,7 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   background-color: #f7f9fa;
-  user-select: none;
+  // user-select: none;
 }
 
 ul,
@@ -29,4 +29,9 @@ button {
 a {
   text-decoration: none;
   color: black;
+}
+
+input {
+  outline: none;
+  font-family: "Poppins", sans-serif;
 }

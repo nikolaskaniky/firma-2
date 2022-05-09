@@ -1,8 +1,7 @@
 import React from "react";
 import HomePresentation from "../../../../reusables/home-presentation";
-import HomeCTA from "../../../../reusables/home-cta";
 import dashbord from "../../../../../assets/images/home-page/website/dashbord@3x.png";
-import classes from "../../../../../styles/home-page/website/dashbord.module.scss";
+import CTASection from "../../../ui/cta-section/cta-section";
 
 const WebsiteDashbord = () => {
   return (
@@ -27,14 +26,7 @@ const WebsiteDashbord = () => {
           </h4>
         }
       />
-      <HomeCTA
-        src={dashbord}
-        linkTo={"/website"}
-        buttonText={"See our models"}
-        containerStyle={classes["image-container"]}
-        contentStyle={classes.content}
-        ctaStyle={classes.cta}
-      />
+      <CTASection image={dashbord} width='622' height='426' buttonText='See models' linkTo='/models' />
     </>
   );
 };
